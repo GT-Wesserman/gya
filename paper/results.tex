@@ -1,0 +1,36 @@
+\section{Results}
+    \subsection{Magnetization vs. Temperature Results}
+    The magnetization measurements for the a-axis of the sample is found in \autoref{fig:MvsT_a}. The magnetization for the b-axis is found in \autoref{fig:MvsT_b}. The magnetization of the c-axis is found in \autoref{fig:MvsT_c}. A comparison between the $\chi$ for the a and b axis for each temperature is found in \autoref{fig:a-b-difference}.
+    From \autoref{fig:MvsT_a}, we can see that a splitting between ZFC and FC occurs, with the highest difference being 5.03e-6 emu/(cm³Oe)
+    \input{figures/all_MvsT}
+    \input{figures/zfc_fz_a_difference}
+    %Show and describe your results here. \\ \\
+    %Magnetization results + analysis \\ \\
+    %Source of potential errors
+    %\input{figures/inverseMvsT}
+
+
+
+    \subsection{Magnetization vs. Magnetic Field Results}
+    The M vs. H measurements were only done for the b- and c-axis, resulting in two very different graphs. The graph for M vs. H for the b-axis is found in \autoref{fig:MvsH-b}, while the M vs. H graph for the c-axis is found in figure \autoref{fig:MvsH-c}.
+    \input{figures/MvsH_b}
+    \input{figures/MvsH_c}
+    \subsection{Analysis}
+    By analysing the results, further conclusions about the magnetic properties of CrSb may be drawn.
+    \subsubsection{Magnetic Anisotropy}
+    By comparing the susceptibility as a function of temperature  between the a- and b-axis, it can be seen that CrSb is anisotropic due to the difference in magnetic susceptibility between different orientations of the material. Specifically, the b-axis shows a larger susceptibility and, unlike the a-axis, no splitting between the ZFC and FC measurements. The difference in susceptibility between the axes can be found in \autoref{fig:a-b-difference}. For data compiling the highest, lowest and average difference, see \autoref{tab:a-b-diff}. \input{figures/a_b_difference}
+    \input{tables/a_b_diff_tab}
+    \subsubsection{ZFC-FC Splitting}
+    As mentioned, the measurements along the b-axis does not show any ZFC-FC splitting, but the a-axis does. The FC case shows a higher susceptibility. The difference in susceptibility between the ZFC and FC cases for the a-axis is found in \autoref{fig:zfc-fc-a-difference}.
+    \subsubsection{Temperature Dependence}
+    Both the a- and b-axis show an increasing susceptibility with increasing temperature. This does not follow the standard Curie-Weiss behaviour and thus requires us to use a modified version of it which includes a temperature independent term $\chi_0$ and a linear term $aT$, as described in Equation (\ref{eq:extended-curie-weiss}).
+    \\ \\
+    By using the python library \textit{Scipy}, a curve with the formula shown in Equation (\ref{eq:extended-curie-weiss}) can be fitted and values for $C$, $\theta_{CW}$, $\chi_0$ and $a$ can be found. However, creating a fit over the entire temperature range yields values for the parameters which are unphysical or a fit which does not fit the data that well. This can be resolved by restraining the fit to only be over a smaller part of the temperature range. The best suited range was found to be around the 50-300 K temperature range, which the fitted line in \autoref{fig:a-fitted-cw} is based around.
+    \\ \\
+    For our purposes, the Curie Constant $C$ is the most interesting. The fitted curve and constant $C$ for the a-axis is found in \autoref{fig:a-fitted-cw}. Using Equation (\ref{eq:u-eff}), the effective magnetic moment can be found with the help of the Curie Constant, see \autoref{tab:curie-const-mu-eff}. The magnetic moment for Cr\textsuperscript{3+} ions can be calculated from Equation (\ref{eq:free-ions-moment}) using $n=3$, which yields a magnetic moment for Cr\textsuperscript{3+} as $\mu_{eff}\approx3.87\mu_B$. 
+    \\ \\
+    The c-axis temperature dependence was different from the a-axis and b-axis. In particular, there appears to be a shoulder near the 5-25 K range, displaying a curve which starts with a rapid decrease in magnetization as the temperature increases, before leveling out and seeing an increase in magnetization with the increasing temperature. The c-axis does nor display any signs of ZFC-FC splitting outside the expected error due to the noise of the data.
+    \input{figures/a_fitted_cw}
+    \input{tables/Curie_and_mu_eff}
+    \subsubsection{Fitted Magnetization vs. Magnetic Field and Hysteresis}
+    The M vs. H graphs plotted in \autoref{fig:MvsH-b} and \autoref{fig:MvsH-c} show that the b-axis and c-axis do not feature any magnetic hysteresis. The plots for all temperatures in the b-axis are completely linear and a fitted linear regression yields a R² value of 1.000 after rounding to 4 significant figures. The lack of hysteresis signifies either antiferromagnetic or paramagnetic behaviour. The graph for the c-axis is far more noisy. This is due to how thin the sample was in the c-axis, leading to a smaller registered magnetic moment which means that the noise has a higher impact on the measurements. The lines are noted to not be linear, however, no signs of a hysteresis loop can be seen. How thin the sample is also affects the contribution of the surface of the sample which, due to not being positioned within the crystal and some atoms missing neighbours, leads to different behaviour. 
