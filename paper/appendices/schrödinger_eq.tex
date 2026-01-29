@@ -1,1 +1,76 @@
+\section{Schrödinger Equation} \label{appendix:schrödinger}
+    
+    The Schrödinger equation is a wave equation used for describing particles as waves, according to the wave-particle duality. This wave like nature of particle means that they can exhibit properties such as inteferense and others not usually assosciated with particles.
+    
+    \subsection{Derivation of the Schrödinger Equation}
+    To derive the Schrödinger equation, we must first make some assumptions and choices for what the equation should represent and which relationships that should be followed. The first one is that the wave equation should reflect the de Broglie wavelength of the particle it represents. This means the relationship \begin{equation}
+        \lambda=\frac{h}{p} \label{eq:de-broglie-wavelength}
+    \end{equation} must be followed, where $h$ is plancks constant and $p$ the momentum of the particle, which can be expressed as $p=mv$. \\ \\
+    The second relation to be followed is the equation for finding the energy of a wave, specifically for a photon, meaning \begin{equation}
+        E=hf.\label{eq:photon-energy}
+    \end{equation}
+    The energy for a particle is best represented with the Hamiltonian, $\hamiltonian$, which is an operator giving the sum of the kinetic energy, $K$, and the potential energy, $V$. We can represent the kinectic energy with the formula $$K=\frac{mv^2}{2}$$ and the potential energy as a function $V(x,t)$, meaning \begin{equation}
+        \frac{mv^2}{2}+V(x,t)=E=hf
+    \end{equation}.
+    \\ \\
+    It will be useful to express the kinectic energy, not as  a function of the velocity, but rather as a function of momentum. Substituting $v=\frac{p}{m}$ into the equation for kinetic energy yields \begin{equation}
+        K=\frac{p^2}{2m}.
+    \end{equation} The momentum in turn is expressed as a function of the wavelength as $p=\frac{h}{\lambda}$, which results in the equation \begin{equation}
+        K=\frac{h^2}{2m\lambda^2}.
+    \end{equation} We can now express the energy in two ways, as a function of frequency and as a function of wavelength togheter with some potential energy function: \begin{equation}
+        \frac{h^2}{2m\lambda^2}+V(x,t)=hf.
+    \end{equation}
+    To simplify the expression for when we use it later we substitute $\lambda=\frac{2\pi}{k}$, $f=\frac{\omega}{2\pi}$ and $h=2\pi\hbar$ giving us \begin{equation}
+        \frac{\hbar^2 k^2}{2m}+V(x,t)=\hbar\omega.
+        \label{eq:energy-from-k-and-o}
+    \end{equation} \\ \\
+    To continue, we must first make some assumptions. Let us call the wave equation $\Psi(x,t)$. If we let the potential energy be constant, then so should the kinetic energy be, as the total energy should be conserved. This constant kinetic energy means the wavelength and frequency also must be constant. In such a case, we should be able to express the wave equation as a simple sinusodial wave of the form \begin{equation}
+        \Psi(x,t)=\cos(kx-\omega t).
+    \end{equation}
+    In such a case we see that the second derivative with respect to $x$ of the equation yields a factor of $-k^2$ and the first time derivative yields a factor $\omega$. These factors are similar to those found in our earlier equation for the energy of the wave and suggests that the equation, for constant potential energy, should have a form similar to \begin{equation}
+        \alpha \frac{\partial^2\Psi(x,t)}{\partial x^2} + V(x,t)\Psi(x,t)=\beta\frac{\partial\Psi(x,t)}{\partial t}.\label{eq:we-with-unkowns}
+    \end{equation}
+    The reason for the extra factor of $\Psi(x,t)$ by the potential energy is to ensure that the equation is linear. The factors of $\alpha$ and $\beta$ are there to give us the freedom to adjust them to make the equation hold true for the relations we seek. \\ \\
+    We assumed the potential energy was constant, so we replace $V(x,t)$ with $V_0$, and substitute in $\Psi(x,t)=\cos(kx-\omega t)$ giving us the equation \begin{equation}
+        -\alpha k^2\cos(kx-\omega t)+V_0\cos(kx-\omega t)=\beta \omega \sin(kx-\omega t) 
+    \end{equation}
+    A problem arises due to the mixture of $\sin$ and $\cos$ terms, which can be seen if we move all to one side and solve for when the equation equals 0: \begin{equation}
+        (\alpha k^2-V_0)\cos(kx-\omega t) + \beta\omega\sin(kx-\omega t)=0.
+    \end{equation}
+    For this equation to hold for every pair of $x$ and $t$, both terms have to always equal 0, meaning $\beta=0$ and $\alpha =\frac{V_0}{k^2}$, meaning the total energy is always 0, which clearly will not help us. To solve this, we could try a different assumption for the sinusodial form of the wave equation, intsead guessing it to be of the form $\Psi=\cos(kx-\omega t) +\gamma\sin(kx-\omega t ) $ where $\gamma$ is some constant we can determine later. Pugging it into equation (\ref{eq:we-with-unkowns}) yields the expression 
+    \begin{equation}
+    \begin{split}    
+        &-\alpha k^2(\cos(kx-\omega t ) +\gamma\sin(kx-\omega t))\\ 
+        &+ V_0(\cos(kx - \omega t) + \gamma\sin(kx - \omega t)) \\ 
+        &=  \frac{\beta\omega}{\gamma}(-\gamma^2\cos(kx -  \omega t) + \gamma\sin(kx - \omega t)).
+    \end{split}
+    \end{equation}
+    We see that the $\cos$ and $\sin$ terms on both sides of the equation are similar. Specifically, we would be able to divide both sides by $(\cos(kx-\omega t)+\gamma\sin(kx-\omega t))$, if $-\gamma^2=1$. For this to happen we would need $\gamma^2=-1 $ which follows the definition for the imaginary unit $i$. If we choose $\gamma=i$, then the equation can be simplified into 
+    \begin{equation}
+        -\alpha k^2+V_0=\frac{\beta\omega}{\gamma}.
+    \end{equation} 
+    We now want to choose $\alpha$ and $\beta$ such that our equation has the same form as equation (\ref{eq:energy-from-k-and-o}), meaning $-\alpha=\frac{\hbar^2}{2m}$ and $\frac{\beta}{\gamma}=\hbar$, which yields \begin{equation}
+        \begin{split}
+            \alpha &=-\frac{\hbar^2}{2m} \\
+            \beta &=i\hbar
+        \end{split}
+    \end{equation}
+    Putting this into equation (\ref{eq:we-with-unkowns}) gives us the equation 
+    \begin{equation}
+        -\frac{\hbar^2}{2m}\frac{\partial^2\Psi(x,t)}{\partial x^2}+V(x,t)\Psi(x,t)=i\hbar\frac{\partial\Psi(x,t)}{\partial t}.
+    \end{equation}
+    Note that we have not actually shown that the equation holds when our original assumptions are not true, such as when $V(x,t)$ is not constant, but it can be postulated that it should hold, and it has been verified through experiment to still hold in such cases. The more common way to display the equation is with the hamiltonian operator which simplifies the expression into 
+    \begin{equation}
+        \hamiltonian\Psi=i\hbar\frac{\partial\Psi}{\partial t}
+    \end{equation}
+    \subsection{Interpretation of the Equation}
+    A wave equation being used to describe a particle does not agree with how they are treated classically, and as such an interpretation of what the equation means is required. The interpretation of the Schrödinger Equation with the most experimental agreement is the Born rule. The Born rule states that the square of the modulus of the Schrödinger equation is a probability density function which states the probability of observing a particle at a given position and time. This allows the equation to describe real physical states, despite its imaginary component as taking the modulus removes it. This effect means that quantum meachnics is not deterministic as the result depends on probability. \\ \\  
+    
+
+    \subsection{Relation to the Fourier Transform and Reciprocal Space}
+
+    
+
+
+
 
