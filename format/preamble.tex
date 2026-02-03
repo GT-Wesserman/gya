@@ -23,6 +23,11 @@
 \frenchspacing
 \usepackage{amsmath,amssymb,amsfonts,amsthm}  % Mathematics
 
+\usepackage{mathtools}
+\DeclarePairedDelimiter\bra{\langle}{\rvert}
+\DeclarePairedDelimiter\ket{\lvert}{\rangle}
+\DeclarePairedDelimiterX\braket[2]{\langle}{\rangle}{#1\,\delimsize\vert\,\mathopen{}#2}
+
 \usepackage{hyperref} 
 \hypersetup{colorlinks, 
     citecolor=black,
