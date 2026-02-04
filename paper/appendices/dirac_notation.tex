@@ -1,7 +1,33 @@
 \section{Dirac Notation}
 Within quantum mechanics, vectors and lini transformations play an important role. However, as anyone familiar with liniear algebra can tell you, vectors and matricies, which represent linear transformations, can have differet apperances depending on the basis choosen. This, togheter with other needs for a conviniet way to notate vectors and transformations, can be met by using Dirac notation.
-\subsection{The Ket and the Bra}
 
+\subsection{The Ket and the Bra}
+The ket is, quite simply, a basis independent way to depict a vector, and this vector may be very abstract with an arbitrary number of dimensions which do not neccessarily represent physical space. It is written as $\ket{A}$ and can be expanded as $\ket{A}=A_1\ket{\epsilon_1}+A_2\ket{\epsilon_2}+...+A_N\ket{\epsilon_N}$ where $\ket{\epsilon_i}$ is the ket representing a basis vector of your choosing. However, this is not always necessary, as the kets are do not need a defined basis, but defining one can be useful in different situations, and a new basis can always be used instead. The bra is similair to the ket in appearance, with the bra for the vector $\vec{A}$ looking like $\bra{A}$. The bra itself is however not a vector, but a vector can be "placed" in a bra in order to define it. The bra then becomes a linear functional, which simply means that has the ability to act on a vector to transform it into a scalar. As such, at the relatively simple level we are working at, the bra can be thought of as transforming a vector into a function which acts on other vectors and yields scalar outputs. To see more clearly what this "function" does, we can use column vector notation. Given a vector $\vec{A}$ we get the ket and bra from $\vec{A}$, represented by some basis vectors $\epsilon_1,\epsilon_2,...,\epsilon_N$
+\begin{align*}
+    \ket{A}&=\begin{pmatrix}
+    A_1\\
+    A_2\\
+    \vdots\\
+    A_N
+    \end{pmatrix} \\
+    \bra{A}&=\begin{pmatrix}
+        A_1^* &A_2^* & \dots&A_N^*
+    \end{pmatrix}.
+\end{align*} By combining the bra with the ket we get the equation
+\begin{align*}
+    \braket{A}{A}=\begin{pmatrix}
+        A_1^* &A_2^* & \dots&A_N^*
+    \end{pmatrix} \begin{pmatrix}
+         A_1\\
+    A_2\\
+    \vdots\\
+    A_N
+    \end{pmatrix}=|\vec{A}|^2.
+\end{align*} It is from this definition easy to see that multiplying a bra with a ket is equivilent to the scalar product for real valued 2 or 3 dimensional vectors. This is used to define the inner product, which is simply a more general version of the scalar product. One way to understand what the inner product is and why it is important, we can look to what the scalar product tells us. For two vectors, the scalar product is greater when the vectors are more aligned and less when they are more perpendicular to each other, with the product being 0 when they are completely perpendicular. It is a way to map how much of one vector can be projected in the direction of another. By defining the more general inner product, it becomes possible to see how "parallel" or "perpendicular" more abstract mathematical objects are to each other, as placing objects within kets or bras is not restricted to only vectors. Functions can also be placed within them. There are a few different ways to understand this. One way is to imagine a function to represent a vector with infinetly many components where the index for a basis is any number within the functions domain and the value of the function at any given input is the magnitude of the component with the index of the input. We saw from the example with vectors, and using matrix multiplication, that the inner product of the 2 finite vectors $\vec{A}$ and $\vec{B}$ is \begin{align*}
+    \braket{A}{B}=\sum_{k=0}^NA^*_k\cdot B_k.
+\end{align*} As the functions do not have discrete "indices" but rather continuos ones, it make sense to replace the sum with an integral, extended from $-\infty$ to $\infty$, given the functions are defined for all real numbers, we get \begin{align*}
+    \braket{f(x)}{g(x)}=\int_{-\infty}^{\infty}f^*(x)g(x)dx
+\end{align*} which is how the inner product is defined for functions.
 
 
 
