@@ -1,7 +1,7 @@
 \section{Dirac Notation}
 Within quantum mechanics, vectors and lini transformations play an important role. However, as anyone familiar with liniear algebra can tell you, vectors and matricies, which represent linear transformations, can have differet apperances depending on the basis choosen. This, togheter with other needs for a conviniet way to notate vectors and transformations, can be met by using Dirac notation.
 
-\subsection{The Ket and the Bra}
+\subsection{The Bra, the ket and the inner product}
 The ket is, quite simply, a basis independent way to depict a vector, and this vector may be very abstract with an arbitrary number of dimensions which do not neccessarily represent physical space. It is written as $\ket{A}$ and can be expanded as $\ket{A}=A_1\ket{\epsilon_1}+A_2\ket{\epsilon_2}+...+A_N\ket{\epsilon_N}$ where $\ket{\epsilon_i}$ is the ket representing a basis vector of your choosing. However, this is not always necessary, as the kets are do not need a defined basis, but defining one can be useful in different situations, and a new basis can always be used instead. The bra is similair to the ket in appearance, with the bra for the vector $\vec{A}$ looking like $\bra{A}$. The bra itself is however not a vector, but a vector can be "placed" in a bra in order to define it. The bra then becomes a linear functional, which simply means that has the ability to act on a vector to transform it into a scalar. As such, at the relatively simple level we are working at, the bra can be thought of as transforming a vector into a function which acts on other vectors and yields scalar outputs. To see more clearly what this "function" does, we can use column vector notation. Given a vector $\vec{A}$ we get the ket and bra from $\vec{A}$, represented by some basis vectors $\epsilon_1,\epsilon_2,...,\epsilon_N$
 \begin{align*}
     \ket{A}&=\begin{pmatrix}
@@ -27,7 +27,15 @@ The ket is, quite simply, a basis independent way to depict a vector, and this v
     \braket{A}{B}=\sum_{k=0}^NA^*_k\cdot B_k.
 \end{align*} As the functions do not have discrete "indices" but rather continuos ones, it make sense to replace the sum with an integral, extended from $-\infty$ to $\infty$, given the functions are defined for all real numbers, we get \begin{align*}
     \braket{f(x)}{g(x)}=\int_{-\infty}^{\infty}f^*(x)g(x)dx
-\end{align*} which is how the inner product is defined for functions.
+\end{align*} which is how the inner product is defined for functions. We now also have the ability to define orthonogality for functions. With vectors, two orthogonal vectors yield a scalar product of zero. As our inner product is supposed to be a generelized scalar product, we define two functions as being orthogonal if their inner product equals zero. In other words, functions $f(x)$ and $g(x)$ are orthogonal if, and only if, 
+\begin{align*}
+    \braket{f(x)}{g(x)} = \int_{-\infty}^{\infty} f^*(x)g(x)dx = 0.
+\end{align*}
+
+
+\subsection{Using Inner Product to Find Components}
+
+If we have a vector $\vec{A}$ we can represent it with a basis system made up from a set of orthogonal vectors. In the most basic case, this can be a vector which exists in 3d real space with three basis vectors along the x-, y- and z-axis. Due to the basis vectors being orthogonal, taking the inner product between the vector and one of the basis vectors yields the magnitud, or norm, the the component of $\vec{A}$ that lies along that basis has. For example, if $\vec{A}=A_x\hat\imath + A_y\hat\jmath + A_z\hat k$ then $\braket{A}{\hat\imath} = A_x\cdot 1 + A_y \cdot 0 + A_z \cdot 0 = A_x$. Note that in this case we defined the basis vectors to have length 1, but if we used basis vectors of arbitrary lengt along the unit vectors, we would need to divide by the length of the basis vectors to find the component. This method for finding components of a vector given a certain basis can be used for functions as well. It was discovered by Jospeh Fourier that any bounded or periodic function could be expressed as a weighted sum of sinusodial functions with different frequencies. If we treat these sinusodial functions as basis vectors, we should be able to use the inner product to find how large of a component each frequency contributes with to build up that function, so long as all of the sinusodial functions are orthogonal to eachother. Recalling the definition of the inner product and setting up the general case for two cosine functions with two given frequencies we can do the following mathematcial derivation: 
 
 
 
