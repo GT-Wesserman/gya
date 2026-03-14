@@ -1,30 +1,39 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
-\contentsline {subsection}{\numberline {1.1}CGS-system}{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Crystal Structures, Reciprocal Space and Fermi Levels}{1}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Ferromagnetism}{3}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Antiferromagnetism}{4}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Other Magnetic Effects}{5}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Altermagnetism}{5}{subsection.1.6}%
-\contentsline {subsection}{\numberline {1.7}Chromium Antimonide}{8}{subsection.1.7}%
-\contentsline {subsection}{\numberline {1.8}Localized vs. Itinerant Magnetism}{8}{subsection.1.8}%
-\contentsline {subsection}{\numberline {1.9}Magnetic Anisotropy}{9}{subsection.1.9}%
-\contentsline {subsection}{\numberline {1.10}Magnetic Moments}{9}{subsection.1.10}%
-\contentsline {subsection}{\numberline {1.11}Curie-Weiss Behaviour}{10}{subsection.1.11}%
-\contentsline {subsection}{\numberline {1.12}Aim of This Study}{11}{subsection.1.12}%
-\contentsline {section}{\numberline {2}Method}{11}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Magnetization vs. Temperature}{12}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Magnetization vs. Magnetic Field}{12}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Results}{15}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Magnetization vs. Temperature Results}{15}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Magnetization vs. Magnetic Field Results}{15}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Analysis}{15}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Magnetic Anisotropy}{15}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}ZFC-FC Splitting}{17}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Temperature Dependence}{17}{subsubsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.4}Fitted Magnetization vs. Magnetic Field and Hysteresis}{21}{subsubsection.3.3.4}%
-\contentsline {section}{\numberline {4}Discussion}{22}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Conclusion}{23}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Sources of Error}{23}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Outlook}{24}{subsection.4.3}%
-\contentsline {section}{References}{25}{subsection.4.3}%
+\contentsline {subsection}{\numberline {1.1}CGS emu units}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Cause of Magnetism}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Crystal Structures, Reciprocal Space and Fermi Levels}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Magnetization}{5}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}Curie-Weiss Law}{6}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}Bloch's Law}{6}{subsubsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.5}Ferromagnetism}{7}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Antiferromagnetism}{7}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Other Magnetic Effects}{8}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Altermagnetism}{8}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Chromium Antimonide}{10}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}Spintronics}{11}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}Localized vs. Itinerant Magnetism}{12}{subsection.1.11}%
+\contentsline {subsection}{\numberline {1.12}Magnetic Anisotropy}{12}{subsection.1.12}%
+\contentsline {subsection}{\numberline {1.13}Magnetic Moments}{13}{subsection.1.13}%
+\contentsline {subsection}{\numberline {1.14}Aim of This Study}{14}{subsection.1.14}%
+\contentsline {section}{\numberline {2}Method}{14}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Magnetization vs. Temperature}{14}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Magnetization vs. Magnetic Field}{16}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Results}{16}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Magnetization vs. Temperature Results}{16}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Magnetization vs. Magnetic Field Results}{19}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Analysis}{19}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Magnetic Anisotropy}{19}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}ZFC-FC Splitting}{21}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Temperature Dependence}{23}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Fitted Magnetization vs. Magnetic Field and Hysteresis}{24}{subsubsection.3.3.4}%
+\contentsline {section}{\numberline {4}Discussion}{25}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Conclusion}{25}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Sources of Error}{26}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Outlook}{26}{subsection.4.3}%
+\contentsline {section}{References}{28}{subsection.4.3}%
+\contentsline {section}{\numberline {A}Schrödinger Equation}{30}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Motivation of the Schrödinger Equation}{30}{subsection.A.1}%
+\contentsline {section}{\numberline {B}Dirac Notation and the Fourier Transform}{33}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}The Bra, the ket and the inner product}{34}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Using Inner Product to Find Components}{36}{subsection.B.2}%

@@ -6,47 +6,47 @@ The style file: ieeetr.bst
 A level-1 auxiliary file: paper/appendix.aux
 Database file #1: references.bib
 Warning--string name "ppmsmanual" is undefined
---line 143 of file references.bib
-Warning--empty journal in tamang2025altermagnetism
-You've used 15 entries,
+--line 153 of file references.bib
+Warning--I didn't find a database entry for "mugiraneza2022tutoria"
+You've used 23 entries,
             1876 wiz_defined-function locations,
-            575 strings with 6222 characters,
-and the built_in function-call counts, 3866 in all, are:
-= -- 348
-> -- 221
-< -- 0
-+ -- 80
-- -- 65
-* -- 302
-:= -- 597
-add.period$ -- 16
-call.type$ -- 15
-change.case$ -- 15
+            634 strings with 7981 characters,
+and the built_in function-call counts, 5775 in all, are:
+= -- 547
+> -- 292
+< -- 1
++ -- 108
+- -- 85
+* -- 427
+:= -- 869
+add.period$ -- 31
+call.type$ -- 23
+change.case$ -- 23
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 199
-empty$ -- 323
-format.name$ -- 65
-if$ -- 918
+cite$ -- 23
+duplicate$ -- 301
+empty$ -- 507
+format.name$ -- 85
+if$ -- 1393
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 15
-newline$ -- 49
-num.names$ -- 14
-pop$ -- 36
+int.to.str$ -- 23
+missing$ -- 23
+newline$ -- 80
+num.names$ -- 22
+pop$ -- 57
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 125
+skip$ -- 190
 stack$ -- 0
-substring$ -- 146
-swap$ -- 82
-text.length$ -- 0
+substring$ -- 222
+swap$ -- 124
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 32
-width$ -- 17
-write$ -- 153
+warning$ -- 0
+while$ -- 47
+width$ -- 25
+write$ -- 245
 (There were 2 warnings)
